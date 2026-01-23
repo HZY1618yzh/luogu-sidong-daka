@@ -10,5 +10,11 @@
 翻看 vscode-luogu 的 extension.js 文件，发现需要模拟浏览器行为，可是不管怎么搞，都是显示`400`错误，于是翻看到了这个文章，把请求头复制过了，就神秘的显示打卡过了！
 
 ## 使用方法
-首先，fork 我的项目。让后，在`Settings->Secrets and Variables->Actions->Repository secrets->New repository secret`里的标题填入`LUOGU_COOKIE`,下面的值，填入你洛谷的名为`__client_id`的cookie，然后点击 Add secret，增加环境变量。最后，在 Actions
+首先，fork 我的项目。让后，在`Settings->Secrets and Variables->Actions->Repository secrets->New repository secret`里的标题填入`LUOGU_COOKIE`,下面的值，填入洛谷的cookie（格式：`__client_id=<你的cid>;_uid=<你的uid>;`），然后点击 Add secret，增加环境变量。最后，在 Actions
  里点击`I understand my workflows, go ahead and enable them`，同意运行。
+
+关于cookie 的获取方法：
+
+![](https://img.cbpan.org/image.php?file=697350296d329.png)
+
+![](https://img.cbpan.org/image.php?file=6973507b81ddd.png)
